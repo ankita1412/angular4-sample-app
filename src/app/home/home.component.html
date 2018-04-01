@@ -1,0 +1,14 @@
+<div class="container homepage">
+  <!-- <h4>Home Works!</h4> -->
+
+  <div *ngIf="!photos">
+    Loading photos....
+  </div>
+  <div>
+      <div class="photo" *ngFor="let photo of photos">
+        <div class="title">{{photo.title}}</div>
+        <img class="iamge" src='{{photo.url}}'/>
+      </div>
+    </div>
+
+</div>

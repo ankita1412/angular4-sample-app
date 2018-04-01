@@ -1,0 +1,14 @@
+<div class="container">
+  <h4>
+    {{title}}
+  </h4>
+  <div *ngIf="!posts">
+      Loading posts....
+    </div>
+  <div>
+    <div class="post" *ngFor="let movie of posts">
+      <div class="title">{{movie.title}}</div>
+      <div class="body">{{movie.body}}</div>
+    </div>
+  </div>
+</div>
